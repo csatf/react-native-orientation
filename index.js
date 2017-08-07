@@ -39,6 +39,10 @@ module.exports = {
     Orientation.lockToPortrait();
   },
 
+  lockToPortraitUpsideDown() {
+    Orientation.lockToPortraitUpsideDown();
+  },
+
   lockToLandscape() {
     Orientation.lockToLandscape();
   },
