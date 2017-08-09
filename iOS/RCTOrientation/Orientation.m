@@ -117,7 +117,7 @@ RCT_EXPORT_METHOD(lockToPortrait)
   #endif
   [Orientation setOrientation:UIInterfaceOrientationMaskPortrait];
   [[NSOperationQueue mainQueue] addOperationWithBlock:^ {
-    [[UIDevice currentDevice] setValue:[NSNumber numberWithInteger: UIInterfaceOrientationPortraitUpsideDown] forKey:@"orientation"];
+    [[UIDevice currentDevice] setValue:[NSNumber numberWithInteger: UIInterfaceOrientationPortrait] forKey:@"orientation"];
   }];
 
 }
@@ -127,9 +127,9 @@ RCT_EXPORT_METHOD(lockToPortraitUpsideDown)
   #if DEBUG
     NSLog(@"Locked to Portrait Upside Down");
   #endif
-  [Orientation setOrientation:UIInterfaceOrientationMaskPortrait];
+  [Orientation setOrientation:UIInterfaceOrientationMaskPortraitUpsideDown];
   [[NSOperationQueue mainQueue] addOperationWithBlock:^ {
-    [[UIDevice currentDevice] setValue:[NSNumber numberWithInteger: UIInterfaceOrientationPortrait] forKey:@"orientation"];
+    [[UIDevice currentDevice] setValue:[NSNumber numberWithInteger: UIInterfaceOrientationPortraitUpsideDown] forKey:@"orientation"];
   }];
 
 }
