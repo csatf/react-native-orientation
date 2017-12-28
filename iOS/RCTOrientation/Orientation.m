@@ -200,7 +200,7 @@ RCT_EXPORT_METHOD(unlockAllOrientations)
   };
 }
 
-(BOOL)requiresMainQueueSetup
++ (BOOL)requiresMainQueueSetup
 {
     return YES;
 }
